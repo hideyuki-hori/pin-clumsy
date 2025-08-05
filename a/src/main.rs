@@ -7,6 +7,7 @@ fn main() {
     }
 }
 
+#[allow(dead_code)]
 fn main_() {
     let mut stack = vec![];
     stack.push(5);
@@ -15,6 +16,7 @@ fn main_() {
     println!("Result: {:?}", stack);
 }
 
+#[allow(dead_code)]
 fn add(stack: &mut Vec<i32>) {
     let lns = stack.pop().unwrap();
     let rns = stack.pop().unwrap();
